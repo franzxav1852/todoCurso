@@ -1,0 +1,34 @@
+package com.everis.examenuno.ejerciciouno;
+
+import java.util.Date;
+import java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock;
+import java.util.logging.Logger;
+
+public class Programa {
+
+	public static void main(String[] args) {
+	    String cadena="";
+	    char [] Arraycadena ;
+	    char caracter;
+	    System.out.println("Introduce una palabra");
+	    cadena=Leer.dato();
+	    Arraycadena=cadena.toCharArray();
+
+	    char[] caracteres = new char[cadena.length()];
+	    int[] cuantasVeces = new int[cadena.length()];
+
+	    for(int i =0;i<Arraycadena.length;i++){
+	        caracter = Arraycadena[i];   
+	        caracteres[i] = caracter;
+	        for(int j = i; j < Arraycadena.length; j++)   {                  
+	            if(Arraycadena[j]==caracter){
+	                cuantasVeces[i]++;
+	                Arraycadena[j] = ' ';
+	            }
+	        }    
+	        if(caracteres[i] != ' ')
+	            System.out.println(caracteres[i] +" "+cuantasVeces[i]+" veces.");
+	    }
+
+	   }
+	}

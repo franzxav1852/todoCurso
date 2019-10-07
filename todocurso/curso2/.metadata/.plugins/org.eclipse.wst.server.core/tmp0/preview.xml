@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server port="8080">
+  <module context="3-jee" name="3-jee" path="C:/Users/Dell5458/Desktop/curso2/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/3-jee" type="j2ee"/>
+</server>

@@ -1,0 +1,20 @@
+microservicios -> base de datos
+
+
+1.- Control escolar 
+(usuario, cursos, calendario, alumno,inscripcion, pago)
+
+
+2.- Inventario 
+(usuario, producto, inventario, venta, compra)
+
+
+3.- Actividades
+(usuario, empleado, actividad, actividadesasignadas, bitacora)
+
+
+1.- Diagrama E/R  ///aqui hasta las 11:30 terminado 
+2.- Crear proyecto spring boot (equipoN°-proyecto-semana2)
+3.- Model (Hibernate tools) 12:00, Repository, RestController
+4.- Postman
+5.- +2 pts JUnit Spring boot???

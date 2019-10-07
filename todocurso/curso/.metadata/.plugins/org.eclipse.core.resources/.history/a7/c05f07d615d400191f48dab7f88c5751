@@ -1,0 +1,7 @@
+package com.everis.bancos.dao;
+
+public class BancoDAO {
+	
+	private List<Banco> bancos = new ArrayList();
+
+}

@@ -1,0 +1,29 @@
+package com.everis.poo.service;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class ClienteServiceTest {
+
+	@Test
+	public void testListar() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testInsertar() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testBuscar() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testEliminar() {
+		fail("Not yet implemented");
+	}
+
+}

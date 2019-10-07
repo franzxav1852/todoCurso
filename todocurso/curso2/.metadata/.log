@@ -1,0 +1,157 @@
+!SESSION 2019-09-11 15:03:01.014 -----------------------------------------------
+eclipse.buildId=4.3.2.201908130627-RELEASE
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.egit.core 1 0 2019-09-11 15:03:21.384
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface 2 0 2019-09-11 15:03:22.626
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-09-11 15:03:22.626
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@48860139,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7e0883f3,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-09-11 15:03:29.853
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Dell5458'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:43.613
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:43.622
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@40612056[org.springframework.tooling.boot.ls:1.10.0.201908130624(id=624)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:43.630
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:43.722
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:47.162
+!MESSAGE Boot LS startup time from start to initialized: 3494ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:47.211
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.tmmQfrXtisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:47.217
+!MESSAGE subscribing to classpath changes: sts4.classpath.tmmQfrXt isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:47.227
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:47.238
+!MESSAGE subsribers = {sts4.classpath.tmmQfrXt=Send Classpath Notifications(116)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:47.247
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:47.254
+!MESSAGE project 3-jee ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:47.261
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:47.266
+!MESSAGE Preparing classpath changed notification 3-jee
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:47.271
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.tmmQfrXt => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:47.277
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:47.289
+!MESSAGE classpath=24 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:47.295
+!MESSAGE buffering callback sts4.classpath.tmmQfrXt 3-jee false 24
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:47.300
+!MESSAGE executing callback sts4.classpath.tmmQfrXt 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:04:47.334
+!MESSAGE executing callback sts4.classpath.tmmQfrXt SUCCESS [done]
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2019-09-11 15:11:33.155
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2019-09-11 15:12:18.314
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.jdt.core 4 1006 2019-09-11 15:38:41.011
+!MESSAGE C:\Users\Dell5458\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2019-09-11 15:38:41.022
+!MESSAGE C:\Users\Dell5458\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2019-09-11 15:38:41.029
+!MESSAGE C:\Users\Dell5458\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2019-09-11 15:38:41.035
+!MESSAGE C:\Users\Dell5458\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2019-09-11 15:38:41.040
+!MESSAGE C:\Users\Dell5458\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2019-09-11 15:38:41.047
+!MESSAGE C:\Users\Dell5458\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.core 4 1006 2019-09-11 15:38:41.054
+!MESSAGE C:\Users\Dell5458\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar is not on its project's build path
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:38:41.099
+!MESSAGE Preparing classpath changed notification 3-jee
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:38:41.119
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:38:41.136
+!MESSAGE buffering callback sts4.classpath.tmmQfrXt 3-jee true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:38:41.175
+!MESSAGE executing callback sts4.classpath.tmmQfrXt 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:38:41.210
+!MESSAGE executing callback sts4.classpath.tmmQfrXt SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:38:48.864
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.tmmQfrXt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:38:48.870
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.tmmQfrXt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:38:48.876
+!MESSAGE subsribers = null
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-09-11 15:38:48.882
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.tmmQfrXt => OK
+
+!ENTRY org.eclipse.core.resources 2 2 2019-09-11 15:43:37.444
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2019-09-11 15:43:37.444
+!MESSAGE The project description file (.project) for '3-jee' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.ui 2 2 2019-09-11 15:48:28.247
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)

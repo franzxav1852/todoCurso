@@ -1,0 +1,51 @@
+package com.everis.poo.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+import com.everis.poo.model.Banco;
+
+
+public class BancoDAO {
+	
+	//Lista de bancos
+	private static List<Banco> bancos = new ArrayList<>();
+	static int contador = 1;
+	// metodos
+	
+	public List<Banco> listar() {
+		return bancos;
+	}
+	public void insertar(Banco banco) {
+		banco.setIdBanco(contador);
+		bancos.add(banco);
+		contador++;
+		
+	}
+	public Banco buscar(int idBanco) {
+		for(Banco banco1 : bancos) {
+			if(banco1.getIdBanco() == idBanco) {
+				return banco1;
+			}
+		}
+		return null;
+	}
+	public boolean actualizar(Banco banco) {
+		Banco encontrado = buscar(banco.getIdBanco());
+		if(encontrado != null) {
+			encontrado.setNombre(banco.getNombre());
+			encontrado.setDireccion(banco.getNombre());
+			return true;
+		}else {
+			return false;
+		}
+	}
+	public boolean eliminar(int idBanco) {
+		Banco encontrado = buscar(idBanco);
+	    if(encontrado !=null){
+	    	bancos.remove(encontrado);
+	    	return true;
+	    }else {
+	        return false;
+	    }
+	}
+}

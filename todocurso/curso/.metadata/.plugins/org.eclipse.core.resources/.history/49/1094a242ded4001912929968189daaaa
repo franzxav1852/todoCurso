@@ -1,0 +1,73 @@
+package com.everis.poo.dao;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.everis.jee.util.ConexionMySQL;
+import com.everis.poo.model.Banco;
+
+
+public class BancoDAO {
+	
+	//Lista de bancos
+	private static List<Banco> bancos = new ArrayList<>();
+	
+	// metodos
+	
+	private ConexionMySQL conexion = new ConexionMySQL();
+	
+	public List<Banco> listar() {
+		String sql = "SELECT * FROM banco";
+		List<Banco> listaBancos = new ArrayList<Banco>();
+		try {
+			ResultSet rs = conexion.ejecutarConsulta(sql);
+			while (rs.next()) {
+				Banco banco = new Banco();
+				banco.setIdBanco(rs.getInt("idbanco"));
+				banco.setNombre(rs.getString("nombre"));
+				banco.setDireccion(rs.getString("direccion"));
+				listaBancos.add(banco);
+			}
+			
+		} catch (SQLException e) {
+			
+		}
+		
+		return bancos;
+	}
+	public void insertar(Banco banco) {
+		
+		bancos.add(banco);
+		
+		
+	}
+	public Banco buscar(int idBanco) {
+		for(Banco banco1 : bancos) {
+			if(banco1.getIdBanco() == idBanco) {
+				return banco1;
+			}
+		}
+		return null;
+	}
+	public boolean actualizar(Banco banco) {
+		Banco encontrado = buscar(banco.getIdBanco());
+		if(encontrado != null) {
+			encontrado.setNombre(banco.getNombre());
+			encontrado.setDireccion(banco.getNombre());
+			return true;
+		}else {
+			return false;
+		}
+	}
+	public boolean eliminar(int idBanco) {
+		Banco encontrado = buscar(idBanco);
+	    if(encontrado !=null){
+	    	bancos.remove(encontrado);
+	    	return true;
+	    }else {
+	        return false;
+	    }
+	}
+}

@@ -1,0 +1,10 @@
+<%@page import="java.util.Date"%>
+<html>
+<body>
+<h2>Scriptles</h2>
+<%
+    Date fecha = new Date();
+    out.println(fecha);
+%>
+</body>
+</html>

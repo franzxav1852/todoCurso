@@ -1,0 +1,81 @@
+package com.everis.jee.controller;
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.everis.poo.model.Banco;
+import com.everis.poo.model.Cliente;
+import com.everis.poo.service.ClienteService;
+
+/**
+ * Servlet implementation class ClientesController
+ */
+public class ClientesController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	static ClienteService service = new ClienteService();
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public ClientesController() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		
+		String idCliente = request.getParameter("idClienteEliminar");
+		if(idCliente!=null) {
+			int idCliente2 = Integer.parseInt(idCliente);
+			service.eliminar(idCliente2);
+		}
+		
+		
+		
+		List<Cliente> clientes = service.listar();
+		//Controlador manda datos a la vista
+		request.setAttribute("Listaclientes", clientes);
+		//Interface que define un objeto que recibe peticiones y las reenvía a otro recurso
+		RequestDispatcher rd = request.getRequestDispatcher("adminClientes.jsp");
+		rd.forward(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		//doGet(request, response);
+		
+		String idCliente = request.getParameter("idCliente");
+		String nombre = request.getParameter("nombre");
+		String apaterno= request.getParameter("apaterno");
+		String amaterno = request.getParameter("amaterno");
+		String rfc = request.getParameter("rfc");
+		
+		Cliente clientes =  new Cliente();
+		clientes.setIdCliente(Integer.parseInt(idCliente));
+		clientes.setNombre(nombre);
+		clientes.setApaterno(apaterno);
+		clientes.setAmaterno(amaterno);
+		clientes.setRfc(rfc);
+		
+		boolean exito = service.insertar(clientes);
+		if(exito == true) {
+			response.getWriter().append("Cliente insertado correctamente :" + clientes.getRfc());
+		}else {
+			response.getWriter().append("El cliente ya existe");
+		}
+	}
+
+}

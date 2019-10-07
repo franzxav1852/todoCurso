@@ -1,0 +1,77 @@
+
+1) Probar el microservicio de exchange
+http://localhost:8000/currency-exchange/from/USD/to/MXN
+
+2)Probar el microservicio de converter
+
+http://localhost:8100/currency-converter/from/USD/to/MXN/quantity/100
+
+1-practica-cloud-inventario-rest
+	Modelo -H2 Producto (stock)(nombre, id y stock del producto)
+	consultarInventario
+
+1-practica-cloud-cliente-rest
+	comprar -> consultarInventario
+
+1- (configuracion server)
+	config.reorden = 10 (dev)
+	config.reorden = 20 (qa)
+	config.reorden = 25 (prod)
+Punto de reorden: es la regla de negocio que se utiliza 
+
+GITHUB publico 
+
+1) crear repositorio, agrega a los integrantes del equipo
+2) git clone URL (en una carpeta)
+3) git add, git commint, git push
+4) git pull
+
+
+
+
+http://localhost:8080/actuator/refresh
+
+
+
+Laptop 1: config server
+Laptop 2: 4 instancias de microservicio de inventario
+Laptop 3: 1 instancia del microservicio de compra 
+Laptop 4 o 3: Peticiones via POSMAN
+
+
+Punto de reorden: actuator: actuator (default y dev 40%, qa 50% y prod 60%) 
+1-Integrar Feign y ribbon 
+
+
+1. Cambien a una base de  datos MySQL (1 laptop)
+2. Registren l< compra y decrementen el stock
+Colocar qn el properties la configuracion a la base de datos
+
+
+Laptop1: MySQL ConfigServer, EurekaServer
+Laptop2: Inventario
+          Inventario
+	   Inventario
+	    Inventario
+Laptop3: Compra
+
+agregar sistema o servicio externo que mande un whattsapp con un mensaje 
+para enviar por medio de rest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
